@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductDetailActivity"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/img_product_detail"
+        android:layout_centerHorizontal="true"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/img_americano_da"/>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/tv_price_detail"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/img_product_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10000"
+        android:textSize="22sp"
+        android:textStyle="bold"/>
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/layout_quality"
+        android:layout_below="@+id/tv_price_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img_decrease"
+            android:layout_centerVertical="true"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:src="@drawable/img_minus"/>
+        <TextView
+            android:layout_marginStart="10dp"
+            android:id="@+id/tv_amount"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal"
+            android:layout_toRightOf="@id/img_decrease"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textSize="16dp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/img_increase"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@id/tv_amount"
+            android:src="@drawable/img_plus" />
+        <Button
+            android:layout_centerVertical="true"
+            android:id="@+id/btn_buy"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="mua"/>
+    </RelativeLayout>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/tv_mota"
+        android:layout_below="@id/layout_quality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mô Tả: "
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tv_mota"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Thông tin chi tiết"
+        android:textSize="18dp"
+        android:textStyle="italic"/>
+</RelativeLayout>

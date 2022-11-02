@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="Login"
+        android:id="@+id/login"
+        android:icon="@drawable/img_user"
+        app:showAsAction="always"/>
+    <item
+        android:title="Gio Hang"
+        android:id="@+id/add_cart"
+        android:icon="@drawable/img_shopping"
+        app:showAsAction="always"/>
+</menu>

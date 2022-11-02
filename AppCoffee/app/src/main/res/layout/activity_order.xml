@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderActivity">
+
+    <ListView
+        android:padding="10dp"
+        android:layout_above="@+id/layout_bottom"
+        android:id="@+id/lv_order"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="10sp"
+        android:divider="@android:color/transparent"/>
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:id="@+id/layout_bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/shadow">
+        <TextView
+            android:layout_above="@+id/tv_total_price"
+            android:gravity="bottom"
+            android:id="@+id/tv_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Số lượng: "
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/tv_total_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_above="@+id/tv_total_price"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tv_quantity"
+            android:gravity="bottom"
+            android:text="gia san pham"
+            android:textSize="18sp"/>
+        <TextView
+            android:gravity="top"
+            android:id="@+id/tv_price"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Tổng tiền: "
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/tv_total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@+id/tv_price"
+            android:gravity="top"
+            android:text="gia san pham"
+            android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/btn_buy"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:text="Đặt Hàng" />
+    </RelativeLayout>
+
+</RelativeLayout>

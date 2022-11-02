@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateUserActivity"
+    android:padding="10dp"
+    android:background="#fff2dd">
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:id="@+id/dangky"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đăng Ký Tài Khoản"
+        android:textSize="26sp"
+        android:textStyle="bold"/>
+    <EditText
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:id="@+id/edt_user_login"
+        android:layout_below="@+id/dangky"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Tên đăng nhập"
+        android:ems="15"
+        android:textColor="@color/black"
+        android:maxLength="20"/>
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/edt_password"
+        android:layout_below="@+id/edt_user_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Mật Khẩu"
+        android:inputType="textPassword"
+        android:ems="15"
+        android:maxLength="20"/>
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/edt_confirm_password"
+        android:layout_below="@+id/edt_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Xác nhận mật khẩu"
+        android:inputType="textPassword"
+        android:ems="15"
+        android:maxLength="20"/>
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/edt_name"
+        android:layout_below="@id/edt_confirm_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Họ tên"
+        android:ems="15"
+        android:textColor="@color/black"
+        android:maxLength="30"/>
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/edt_address"
+        android:layout_below="@+id/edt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Địa Chỉ"
+        android:ems="15"
+        android:textColor="@color/black"
+        android:maxLength="50"/>
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt_phone"
+        android:layout_below="@+id/edt_address"
+        android:hint="Số điện thoại"
+        android:inputType="phone"
+        android:ems="15"
+        android:textColor="@color/black"
+        android:maxLength="10"/>
+    <Button
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_create"
+        android:layout_below="@+id/edt_phone"
+        android:text="Tạo Tài Khoản"
+        android:textSize="20sp"/>
+</RelativeLayout>

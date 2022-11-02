@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserDetailActivity"
+    android:background="#fff2dd">
+
+
+    <TextView
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thông tin tài khoản"
+        android:textSize="26sp"
+        android:textStyle="bold"/>
+    <EditText
+        android:enabled="false"
+        android:layout_marginTop="50dp"
+        android:id="@+id/edt_name"
+        android:layout_below="@+id/tv"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên"
+        android:ems="15"/>
+    <EditText
+        android:enabled="false"
+        android:layout_marginTop="10dp"
+        android:id="@+id/edt_address"
+        android:layout_below="@+id/edt_name"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Địa chỉ"
+        android:ems="15"/>
+    <EditText
+        android:enabled="false"
+        android:layout_marginTop="10dp"
+        android:id="@+id/edt_phone"
+        android:layout_below="@id/edt_address"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="phone"
+        android:ems="15"/>
+    <Button
+        android:layout_below="@id/edt_phone"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_logout"
+        android:text="Đăng xuất"
+        android:textSize="20sp"/>
+</RelativeLayout>
